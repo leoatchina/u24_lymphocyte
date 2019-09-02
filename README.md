@@ -8,7 +8,7 @@ docker build -t lehou0312/lym-pipeline-image-v0 .
 
 # run it
 
-docker run --name --name lym-pipeline-container -it -d `pwd`:/root/u24_lymphocyte -d lehou0312/lym-pipeline-image-v0 bash
+docker run --name lym-pipeline-container -it -v `pwd`:/root/u24_lymphocyte -d lehou0312/lym-pipeline-image-v0 bash
 
 # u24_lymphocyte
 
