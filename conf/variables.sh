@@ -9,7 +9,7 @@ MONGODB_PORT=27017
 HEATMAP_VERSION=lym_v1
 
 # Base directory
-BASE_DIR=/data
+BASE_DIR=/root/u24_lymphocyte/data
 LOCAL_DIR=/root/u24_lymphocyte
 
 # The username you want to download heatmaps from
@@ -43,6 +43,6 @@ LYM_CNN_TRAINING_DATA=${BASE_DIR}/training_data_cnn
 LYM_CNN_TRAINING_DEVICE=gpu0
 LYM_CNN_PRED_DEVICE=gpu0
 NEC_CNN_TRAINING_DATA=${LOCAL_DIR}/data/training_data_cnn
-NEC_CNN_TRAINING_DEVICE=gpu1
-NEC_CNN_PRED_DEVICE=gpu1
+NEC_CNN_TRAINING_DEVICE=gpu0
+NEC_CNN_PRED_DEVICE=gpu0
 
