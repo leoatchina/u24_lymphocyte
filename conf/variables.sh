@@ -13,7 +13,7 @@ BASE_DIR=/root/u24_lymphocyte/data
 LOCAL_DIR=/root/u24_lymphocyte
 
 # The username you want to download heatmaps from
-USERNAME=ddd
+USERNAME=leo
 # The list of case_ids you want to download heaetmaps from
 CASE_LIST=${LOCAL_DIR}/data/raw_marking_to_download_case_list/case_list.txt
 
