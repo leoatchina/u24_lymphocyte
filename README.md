@@ -6,12 +6,12 @@ docker build -t lehou0312/lym-pipeline-image-v0 -f docker/Dockerfile .
 ```
 # run it
 ```
-docker rm -f lym-pipeline-container && \
-docker run --name lym-pipeline-container -it -v `pwd`/data:/data -v `pwd`:/root/u24_lymphocyte -d lehou0312/lym-pipeline-image-v0 bash
+nvidia-docker rm -f lym-pipeline-container && \
+nvidia-docker run --name lym-pipeline-container -it -v `pwd`:/root/u24_lymphocyte -d lehou0312/lym-pipeline-image-v0 bash
 ```
 # into container
 ```
-docker exec -it  lym-pipeline-container bash -c "cd /data/"
+docker exec -it  lym-pipeline-container bash
 ```
 
 # u24_lymphocyte
