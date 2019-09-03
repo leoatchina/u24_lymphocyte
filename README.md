@@ -1,15 +1,13 @@
 # build docker images
-
+```
 git clone https://github.com/leoatchina/u24_lymphocyte.git
-
 cd u24_lymphocyte
-
-docker build -t lehou0312/lym-pipeline-image-v0 .
-
+docker build -t lehou0312/lym-pipeline-image-v0 -f docker/Dockerfile .
+```
 # run it
-
+```
 docker run --name lym-pipeline-container -it -v `pwd`:/root/u24_lymphocyte -d lehou0312/lym-pipeline-image-v0 bash
-
+```
 # u24_lymphocyte
 
 This software implements the pipeline for the lymphocyte classification project.
