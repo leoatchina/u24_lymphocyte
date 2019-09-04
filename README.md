@@ -4,7 +4,10 @@ git clone https://github.com/leoatchina/u24_lymphocyte.git
 cd u24_lymphocyte
 docker build -t leoatchina/lym-pipeline-image-v0 -f docker/Dockerfile .
 ```
-
+# or pull it
+```
+docker pull leoatchina/lym-pipeline-image-v0
+```
 # run it
 ```
 nvidia-docker rm -f lym-pipeline-container && \
