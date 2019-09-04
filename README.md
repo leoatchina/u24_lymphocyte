@@ -2,13 +2,16 @@
 ```
 git clone https://github.com/leoatchina/u24_lymphocyte.git
 cd u24_lymphocyte
-docker build -t lehou0312/lym-pipeline-image-v0 -f docker/Dockerfile .
+docker build -t leoatchina/lym-pipeline-image-v0 -f docker/Dockerfile .
 ```
-
+# or pull it
+```
+docker pull leoatchina/lym-pipeline-image-v0
+```
 # run it
 ```
 nvidia-docker rm -f lym-pipeline-container && \
-nvidia-docker run --name lym-pipeline-container -it -v `pwd`:/root/u24_lymphocyte -v /etc/localtime:/etc/localtime:ro -d lehou0312/lym-pipeline-image-v0 bash
+nvidia-docker run --name lym-pipeline-container -it -v `pwd`:/root/u24_lymphocyte -v /etc/localtime:/etc/localtime:ro -d leoatchina/lym-pipeline-image-v0 bash
 ```
 
 # into container
