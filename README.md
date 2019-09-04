@@ -4,11 +4,13 @@ git clone https://github.com/leoatchina/u24_lymphocyte.git
 cd u24_lymphocyte
 docker build -t lehou0312/lym-pipeline-image-v0 -f docker/Dockerfile .
 ```
+
 # run it
 ```
 nvidia-docker rm -f lym-pipeline-container && \
-nvidia-docker run --name lym-pipeline-container -it -v `pwd`:/root/u24_lymphocyte -d lehou0312/lym-pipeline-image-v0 bash
+nvidia-docker run --name lym-pipeline-container -it -v `pwd`:/root/u24_lymphocyte -v /etc/localtime:/etc/localtime:ro -d lehou0312/lym-pipeline-image-v0 bash
 ```
+
 # into container
 ```
 docker exec -it  lym-pipeline-container bash
