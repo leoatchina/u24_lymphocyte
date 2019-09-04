@@ -18,6 +18,7 @@ for files in ${IN_FOLDER}/*.*; do
         echo "failed extracting patches for " ${SVS}
         rm -rf ${OUT_FOLDER}/${SVS}
     fi
+    echo ${SVS} finished
 done
 
 exit 0;
